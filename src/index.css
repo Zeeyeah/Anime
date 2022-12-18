@@ -1,13 +1,94 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Raleway:wght@300;400;500;600;700;900&display=swap');
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --primary-color: #252a40;
+  --secondary-color: #373f61;
+}
+body{
+  font-family: 'Raleway', sans-serif;
+  background-color: var(--secondary-color);
+}
+.anime-details{
+  background-color: var(--primary-color);
+  width: 100%;
+  padding: 0 200px;
+  color: white;
+  position: relative;
+}
+.cover-image{
+  width: 100%;
+  min-height: 100px;
+  max-height: 300px;
+  filter: brightness(40%);
+  background-color: var(--secondary-color);
+}
+.anime-info{
+  display: flex;
+  flex-direction: column;
+  margin-left: 210px;
+}
+.watch-btn{
+  width: 80px;
+  padding: 10px 0;
+  position: absolute;
+  left: 410px;
+  top: -50px;
+  border: 2px var(--secondary-color) solid;
+  background-color: var(--primary-color);
+  color: white;
+  cursor: pointer;
+}
+.poster-image{
+  position: absolute;
+  left: 200px;
+  top: -150px;
+  width: 200px;
+}
+.synopsis{
+  letter-spacing: 1px;
+}
+.synopsis > h1{
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+.more-info {
+  padding-bottom: 30px;
+}
+.more-info > h1{
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+.more-info > p{
+  margin: 5px 0;
+  opacity: 70%;
+}
+@media screen and (max-width: 790px){
+  .anime-details{
+    padding: 0 100px;
+  }
+  .poster-image{
+    left: 100px;
+  }
+  .watch-btn{
+    left: 310px;
+  }
+}
+@media screen and (max-width: 495px){
+  .anime-details{
+    padding: 0 30px;
+  }
+  .poster-image{
+    top: -75px;
+    width: 150px;
+    left: 30px;
+  }
+  .watch-btn{
+    left: 190px;
+  }
+  .anime-info{
+    margin-left: 160px;
+  }
 }
