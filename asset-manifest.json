@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/Anime/static/css/main.64005174.css",
+    "main.css": "/Anime/static/css/main.71ca754f.css",
     "main.js": "/Anime/static/js/main.69c649b2.js",
     "static/media/chainsaw.jpeg": "/Anime/static/media/chainsaw.2b704e055b97a9ad36c6.jpeg",
     "index.html": "/Anime/index.html",
-    "main.64005174.css.map": "/Anime/static/css/main.64005174.css.map",
+    "main.71ca754f.css.map": "/Anime/static/css/main.71ca754f.css.map",
     "main.69c649b2.js.map": "/Anime/static/js/main.69c649b2.js.map"
   },
   "entrypoints": [
-    "static/css/main.64005174.css",
+    "static/css/main.71ca754f.css",
     "static/js/main.69c649b2.js"
   ]
 }
